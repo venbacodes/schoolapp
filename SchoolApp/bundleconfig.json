@@ -1,0 +1,38 @@
+﻿[
+  {
+    "outputFileName": "site.min.css",
+    "inputFiles": [
+      "site.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "home/home.min.css",
+    "inputFiles": [
+      "home/home.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "aboutus/aboutus.min.css",
+    "inputFiles": [
+      "aboutus/aboutus.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "site.min.js",
+    "inputFiles": [
+      "site.js"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  }
+]

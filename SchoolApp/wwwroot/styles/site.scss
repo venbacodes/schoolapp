@@ -1,0 +1,25 @@
+﻿@import "_variables.scss";
+
+* {
+    font-family: $signika;
+}
+
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: $baseDarkGray;
+    margin: 8px 0;
+    font-style: italic;
+    font-weight: 500;
+
+    &:before, &:after {
+        content: "";
+        flex-grow: 1;
+        background: $baseMediumGray;
+        height: 1px;
+        font-size: 0;
+        line-height: 0;
+        margin: 0 8px;
+    }
+}

@@ -1,0 +1,12 @@
+﻿@import "../_variables.scss";
+
+$myVariable: 40px;
+$yourVariable: #333eee;
+
+.section{
+    color: $fontWhite;
+    background-color: $fontBlack;
+    font-size: $H3FontSize;
+    padding: $myVariable;
+    border: 3px solid $yourVariable;
+}
