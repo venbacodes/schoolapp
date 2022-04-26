@@ -1,5 +1,18 @@
-﻿@import "../_variables.scss";
+﻿
+#aboutus 
+{
+  .aboutContent1{
+   
+    text-align:center;
+    color: orange; 
+  }
 
-.head{
-    color: $baseLightBlue;
+.aboutContent{
+    text-align: left;
+  }
+   .aboutHead{
+  
+    text-align: left;
+  
+  }
 }

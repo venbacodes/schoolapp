@@ -18,6 +18,24 @@
     }
   },
   {
+    "outputFileName": "index/index.min.css",
+    "inputFiles": [
+      "index/index.css"      
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "staffs/staffs.min.css",
+    "inputFiles": [
+      "staffs/staffs.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
     "outputFileName": "aboutus/aboutus.min.css",
     "inputFiles": [
       "aboutus/aboutus.css"

@@ -1,13 +1,49 @@
 ﻿@page "/gallery"
 
-@model IndexModel
+@model GalleryModel
 @{
     ViewData["Title"] = "Home page";
 }
 
 <div class="text-center" id="gallery">
-    <h1 class="display-4 galleryHead">Gallery</h1>
-    <p class="galleryContent">This is a gallery page.</p>
+    
+
+
+<div class="text-center" id="container">
+  <h2 class="display-4 galleryHead">Image Gallery</h2>
+    
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+           <p class="gallerycontent">Silver Jubliee Year Magazine</p>
+           
+          <img src="/images/school.jpg" alt="school" style="width:100%">
+        <button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  See more..
+</button>
+            
+          
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+           <p class="gallerycontent">Prospectus</p>
+        
+          <img src="/images/page1.jpg" alt="page" style="width:100%">
+         
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+         <p class="gallerycontent">Our Facilities</p>
+          <img src="/images/p lab.jpg" alt="labs" style="width:100%">
+         
+      </div>
+    </div>
+  </div>
 </div>
 
 @section Styles{
