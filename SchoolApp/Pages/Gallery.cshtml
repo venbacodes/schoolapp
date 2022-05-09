@@ -1,46 +1,46 @@
 ﻿@page "/gallery"
 
 @model GalleryModel
+
 @{
-    ViewData["Title"] = "Home page";
+  ViewData["Title"] = "Gallery";
 }
 
-<div class="text-center" id="gallery">
-    
-
-
-<div class="text-center" id="container">
-  <h2 class="display-4 galleryHead">Image Gallery</h2>
-    
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-           <p class="gallerycontent">Silver Jubliee Year Magazine</p>
-           
-          <img src="/images/school.jpg" alt="school" style="width:100%">
-        <button class="btn btn-primary" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  See more..
-</button>
-            
-          
-        
+<div class="container">
+  <div class="text-center" id="gallery">
+    <div class="text-center" id="container">
+      <div class="d-flex justify-content-center">
+        <h2 class="display-4 galleryHead">Image Gallery</h2>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-           <p class="gallerycontent">Prospectus</p>
-        
-          <img src="/images/page1.jpg" alt="page" style="width:100%">
-         
-        
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-         <p class="gallerycontent"></p>
-          <img src="/images/p lab.jpg" alt="labs" style="width:100%">
-         
+      <div class="d-flex">
+        <div class="col-12">
+          <div id="bb-bookblock" class="bb-bookblock">
+            <div class="bb-item">
+              <img src="images/magazine/4.jpg" alt="image01" />
+            </div>
+            <div class="bb-item">
+              <img src="images/magazine/5.jpg" alt="image02" />
+            </div>
+            <div class="bb-item">
+              <img src="images/magazine/6.jpg" alt="image03" />
+            </div>
+            <div class="bb-item">
+              <img src="images/magazine/7.jpg" alt="image04" />
+            </div>
+            <div class="bb-item">
+              <img src="images/magazine/8.jpg" alt="image05" />
+            </div>
+            <div class="bb-item">
+              <img src="images/magazine/9.jpg" alt="image05" />
+            </div>
+          </div>
+          <nav>
+            <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+            <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+            <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+            <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+          </nav>
+        </div>
       </div>
     </div>
   </div>
@@ -48,4 +48,94 @@
 
 @section Styles{
 <link href="~/dist/css/gallery/gallery.css" rel="stylesheet" />
+<link href="~/styles/bookblock.css" rel="stylesheet" />
+}
+
+@section Scripts{
+<script type="text/javascript" src="~/scripts/jquery.bookblock.js"></script>
+
+<script>
+  var Page = (function () {
+
+    var config = {
+      $bookBlock: $('#bb-bookblock'),
+      $navNext: $('#bb-nav-next'),
+      $navPrev: $('#bb-nav-prev'),
+      $navFirst: $('#bb-nav-first'),
+      $navLast: $('#bb-nav-last')
+    },
+      init = function () {
+        config.$bookBlock.bookblock({
+          speed: 800,
+          shadowSides: 0.8,
+          shadowFlip: 0.7
+        });
+        initEvents();
+      },
+      initEvents = function () {
+
+        var $slides = config.$bookBlock.children();
+
+        // add navigation events
+        config.$navNext.on('click touchstart', function () {
+          config.$bookBlock.bookblock('next');
+          return false;
+        });
+
+        config.$navPrev.on('click touchstart', function () {
+          config.$bookBlock.bookblock('prev');
+          return false;
+        });
+
+        config.$navFirst.on('click touchstart', function () {
+          config.$bookBlock.bookblock('first');
+          return false;
+        });
+
+        config.$navLast.on('click touchstart', function () {
+          config.$bookBlock.bookblock('last');
+          return false;
+        });
+
+        // add swipe events
+        $slides.on({
+          'swipeleft': function (event) {
+            config.$bookBlock.bookblock('next');
+            return false;
+          },
+          'swiperight': function (event) {
+            config.$bookBlock.bookblock('prev');
+            return false;
+          }
+        });
+
+        // add keyboard events
+        $(document).keydown(function (e) {
+          var keyCode = e.keyCode || e.which,
+            arrow = {
+              left: 37,
+              up: 38,
+              right: 39,
+              down: 40
+            };
+
+          switch (keyCode) {
+            case arrow.left:
+              config.$bookBlock.bookblock('prev');
+              break;
+            case arrow.right:
+              config.$bookBlock.bookblock('next');
+              break;
+          }
+        });
+      };
+
+    return { init: init };
+
+  })();
+</script>
+<script>
+  Page.init();
+</script>
+
 }
