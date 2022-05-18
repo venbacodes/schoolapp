@@ -93,8 +93,8 @@ namespace SchoolApp.ID.Server
                     // register your IdentityServer with Google at https://console.developers.google.com
                     // enable the Google+ API
                     // set the redirect URI to https://localhost:5001/signin-google
-                    options.ClientId = "copy client ID from Google here";
-                    options.ClientSecret = "copy client secret from Google here";
+                    options.ClientId = "213279417003-blcmumrh4ghmg8k1vcsbl6768qu00nof.apps.googleusercontent.com";
+                    options.ClientSecret = "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";
                 });
 
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
