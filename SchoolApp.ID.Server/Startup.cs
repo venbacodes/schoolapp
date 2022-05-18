@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Logging;
 using Newtonsoft.Json;
 using SchoolApp.ID.Server.Models;
 using SchoolApp.ID.Server.Services;
@@ -85,17 +86,19 @@ namespace SchoolApp.ID.Server
 
             idServerBuilder.AddDeveloperSigningCredential();
 
-            services.AddAuthentication()
-                .AddGoogle(options =>
-                {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+            //IdentityModelEventSource.ShowPII = true;
 
-                    // register your IdentityServer with Google at https://console.developers.google.com
-                    // enable the Google+ API
-                    // set the redirect URI to https://localhost:5001/signin-google
-                    options.ClientId = "213279417003-blcmumrh4ghmg8k1vcsbl6768qu00nof.apps.googleusercontent.com";
-                    options.ClientSecret = "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";
-                });
+            //services.AddAuthentication()
+            //    .AddGoogle(options =>
+            //    {
+            //        options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+            //        // register your IdentityServer with Google at https://console.developers.google.com
+            //        // enable the Google+ API
+            //        // set the redirect URI to https://localhost:5001/signin-google
+            //        options.ClientId = "213279417003-blcmumrh4ghmg8k1vcsbl6768qu00nof.apps.googleusercontent.com";
+            //        options.ClientSecret = "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";
+            //    });
 
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
             {

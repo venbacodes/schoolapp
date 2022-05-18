@@ -59,6 +59,7 @@ namespace SchoolApp.ID.Server.Controllers
         [HttpGet]
         public async Task<IActionResult> Login(string returnUrl)
         {
+            await AddRoles();
             // build a model so we know what to show on the login page
             var vm = await BuildLoginViewModelAsync(returnUrl);
 
@@ -258,6 +259,23 @@ namespace SchoolApp.ID.Server.Controllers
             }
 
             return View("RegistrationSuccess");
+        }
+
+        private async Task AddRoles()
+        {
+            if (!_roleManager.Roles.Any())
+            {
+                await _roleManager.CreateAsync(new IdentityRole { Id = Guid.NewGuid().ToString(), Name = "Admin", NormalizedName = "ADMIN" });
+
+                await _roleManager.CreateAsync(new IdentityRole { Id = Guid.NewGuid().ToString(), Name = "EndUser", NormalizedName = "ENDUSER" });
+
+                var user = await _userManager.FindByEmailAsync("admin@alsadhik.com");
+
+                if (user != null)
+                {
+                    await _userManager.AddToRoleAsync(user, "admin");
+                }
+            }
         }
 
         /*****************************************/
