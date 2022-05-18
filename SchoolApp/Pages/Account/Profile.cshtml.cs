@@ -2,6 +2,7 @@ using IdentityModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace SchoolApp.Pages.Account
@@ -12,7 +13,7 @@ namespace SchoolApp.Pages.Account
         public string LastName { get; set; }
         public string Email { get; set; }
 
-        public async Task<IActionResult> OnGet()
+        public IActionResult OnGet()
         {
             if (!User.Identity.IsAuthenticated)
             {
@@ -23,7 +24,7 @@ namespace SchoolApp.Pages.Account
 
             FirstName = claims.FirstOrDefault(f => f.Type.Equals("FirstName", System.StringComparison.OrdinalIgnoreCase))?.Value;
             LastName = claims.FirstOrDefault(f => f.Type.Equals("LastName", System.StringComparison.OrdinalIgnoreCase))?.Value;
-            Email = claims.FirstOrDefault(f => f.Type.Equals(JwtClaimTypes.Email, System.StringComparison.OrdinalIgnoreCase))?.Value;
+            Email = claims.FirstOrDefault(f => f.Type.Equals(ClaimTypes.Email, System.StringComparison.OrdinalIgnoreCase))?.Value;
 
             return Page();
         }
