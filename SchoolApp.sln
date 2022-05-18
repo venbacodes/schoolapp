@@ -5,9 +5,7 @@ VisualStudioVersion = 17.0.32002.185
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolApp", "SchoolApp\SchoolApp.csproj", "{652386DE-A16B-4496-977C-BD5ACDAC9214}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerAspNetIdentity", "IdentityServerAspNetIdentity\IdentityServerAspNetIdentity.csproj", "{A99D9581-EB54-4ECF-918B-03D68A009EEC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp.ID.Server", "SchoolApp.ID.Server\SchoolApp.ID.Server.csproj", "{16503DC7-6A4C-4C72-9F62-867367BE0FF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolApp.ID.Server", "SchoolApp.ID.Server\SchoolApp.ID.Server.csproj", "{16503DC7-6A4C-4C72-9F62-867367BE0FF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{652386DE-A16B-4496-977C-BD5ACDAC9214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{652386DE-A16B-4496-977C-BD5ACDAC9214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{652386DE-A16B-4496-977C-BD5ACDAC9214}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A99D9581-EB54-4ECF-918B-03D68A009EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A99D9581-EB54-4ECF-918B-03D68A009EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A99D9581-EB54-4ECF-918B-03D68A009EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A99D9581-EB54-4ECF-918B-03D68A009EEC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16503DC7-6A4C-4C72-9F62-867367BE0FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16503DC7-6A4C-4C72-9F62-867367BE0FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16503DC7-6A4C-4C72-9F62-867367BE0FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
