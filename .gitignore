@@ -394,5 +394,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-dist/
+schoolapp/wwwroot/dist/
 App_Data/
