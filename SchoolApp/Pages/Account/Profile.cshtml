@@ -1,0 +1,30 @@
+﻿@page "/account/profile"
+@model SchoolApp.Pages.Account.ProfileModel
+@{
+}
+
+<div class="container">
+    <div class="d-flex flex-column">
+        <div class="fs-1">
+            My Profile
+        </div>
+        <div class="fs-3 d-flex flex-column">
+            <div class="d-flex flex-row">
+                <div class="">
+                    First Name
+                </div>
+                <div class="">
+                    @Model.FirstName
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="">
+                    Last Name
+                </div>
+                <div class="">
+                    @Model.LastName
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
