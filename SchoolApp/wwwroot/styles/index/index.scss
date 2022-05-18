@@ -65,3 +65,11 @@
         display: none;
     }
 }
+
+.admission {
+    background: url(/images/5.jpg), linear-gradient(90deg, #444344 0%);
+    padding: 40px 0;
+    color: rgb(0, 0, 0);
+    background-blend-mode: soft-light;
+    background-size: contain;
+}
