@@ -6,190 +6,302 @@
 }
 
 @section Styles{
-<link href="~/dist/css/index/index.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" integrity="sha512-yJHCxhu8pTR7P2UgXFrHvLMniOAL5ET1f5Cj+/dzl+JIlGTh5Cz+IeklcXzMavKvXP8vXqKMQyZjscjf3ZDfGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/dist/css/index/index.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" integrity="sha512-yJHCxhu8pTR7P2UgXFrHvLMniOAL5ET1f5Cj+/dzl+JIlGTh5Cz+IeklcXzMavKvXP8vXqKMQyZjscjf3ZDfGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 }
 
-@section Scripts{
+    @section Scripts{
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#images_wrapper").lightSlider({
-            auto: true,            
-            verticalHeight: 300,
-            keyPress: false,
-            controls: false
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#images_wrapper").lightSlider({
+                auto: true,
+                verticalHeight: 300,
+                keyPress: false,
+                controls: false
+            });
+
+            $('.announcement-slider').slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                prevArrow: $('.prev-arrow-announcement'),
+                nextArrow: $('.next-arrow-announcement')
+            });
+
         });
-    });
-</script>
+    </script>
 }
 
 
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="/images/cs.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Al-Jamieathus Sadhik Matriculation School</h5>
-                <p>Municipal Corporation, Kajamalai Colony, Tiruchirappalli, Tamil Nadu 620023</p>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/cs.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Al-Jamieathus Sadhik Matriculation School</h5>
+                    <p>Municipal Corporation, Kajamalai Colony, Tiruchirappalli, Tamil Nadu 620023</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <img src="/images/5.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Founders</h5>
+                    <p>
+                        The school was established in 1991 by the venerable Mawlavi Al Habib A. Ahmad Kabir Hazrat.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+
+                <img src="/images/3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Donations</h5>
+                    <p>
+                        The trust has a panel of scholars, businessmen, engineers, lawyers, and an 'academic
+                        committee' consisting of experienced commentators, college professors, and retired
+                        principals.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="carousel-item">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-            <img src="/images/5.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Founders</h5>
-                <p>The school was established in 1991 by the venerable Mawlavi Al Habib A. Ahmad Kabir Hazrat.
-                </p>
+    <div class="container mt-3">
+        <div class="d-flex mt-5">
+            <div class="col justify-content-center d-flex mt-4 flex-column">
+                <h2 class="d-flex">OUR FEATURES </h2>
+                <div class="d-flex">
+                    <ul class="">
+                        <li> RO Water System</li>
+                        <li> Largest Play Ground</li>
+                        <li> Transport Facilty</li>
+                        <li> Smart Class</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="carousel-item">
-
-
-            <img src="/images/3.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Donations</h5>
-                <p>The trust has a panel of scholars, businessmen, engineers, lawyers, and an 'academic
-                    committee' consisting of experienced commentators, college professors, and retired
-                    principals.</p>
+            <div class="col d-flex">
+                <img class="img-fluid" src="/images/3.jpg" />
             </div>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
 
-<div class="container mt-3">
-    <div class="d-flex mt-5">
-        <div class="col justify-content-center d-flex mt-4 flex-column">
-            <h2 class="d-flex">OUR FEATURES </h2>
-            <div class="d-flex">
-                <ul class="">
-                    <li> RO Water System</li>
-                    <li> Largest Play Ground</li>
-                    <li> Transport Facilty</li>
-                    <li> Smart Class</li>
-                </ul>
+    <div class="container-fluid our-facilities mt-3 mb-3">
+        <div class="text-center main-title">
+            OUR FACILITIES
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
+                    <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <div class="d-flex flex-column ps-3 justify-content-center">
+                        <div class="d-flex title">
+                            Chemistry Lab
+                        </div>
+                        <div class="d-flex desc">
+                            We have well equiped instuments in our laboratory.
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
+                    <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="d-flex flex-column ps-3 justify-content-center">
+                        <div class="d-flex title">
+                            Physics Lab
+                        </div>
+                        <div class="d-flex desc">
+                            Latest and highly calibrated instruments with well furnished lab.
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
+                    <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                    <div class="d-flex flex-column ps-3 justify-content-center">
+                        <div class="d-flex title">
+                            Computer Lab
+                        </div>
+                        <div class="d-flex desc">
+                            Airconditioned Lab with latest computers and Projector.
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
+                    <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="d-flex flex-column ps-3 justify-content-center">
+                        <div class="d-flex title">
+                            Library
+                        </div>
+                        <div class="d-flex desc">
+                            we have lot book collection from around the world
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col d-flex">
-            <img class="img-fluid" src="/images/3.jpg" />
-        </div>
     </div>
-</div>
 
-<div class="container-fluid our-facilities mt-3 mb-3">
-    <div class="text-center main-title">
-        OUR FACILITIES
-    </div>
-    <div class="container">
+    <div class="container" id="announcements">
         <div class="row">
-            <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
-                <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
-                    <i class="fa-solid fa-flask"></i>
-                </div>
-                <div class="d-flex flex-column ps-3 justify-content-center">
-                    <div class="d-flex title">
-                        Chemistry Lab
+            <div class="col-lg-12 pr-0">
+                <section aria-label="Announcements" class="announcements">
+                    <h2 class="font-weight-bold border-bottom pb-3 mt-3 mb-0 pr-5">Announcements</h2>
+
+                    <div class="announcement-slider border-r-xs-0 border-r position-relative">
+                        <div>
+                            <ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">
+                                <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase">April 02nd, 2018</span>
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="https://www.solodev.com/news/solodev-ranked-as-high-performer-on-g2-crowds-spring-2018-web-content-management-grid.stml">
+                                            Solodev Ranked as High Performer on G2 Crowd
+                                        </a>
+                                    </h3>
+                                    <p class="m-0 post_intro">Florida's premier web content management software company ranked favorably in user-based G2 Crowd ratings.</p>
+                                </li>
+                                <li class="border-bottom pb-3 mt-3">
+
+                                    <span class="meta text-uppercase">January 30th, 2018</span>
+
+
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="https://www.solodev.com/news/solodev-earns-highest-ranking-software-tool-for-state-of-florida-in-nationwide-g2-crowd-study.stml">
+                                            Solodev Earns “Highest Ranking Software Tool”
+                                        </a>
+                                    </h3>
+                                    <p class="m-0 post_intro">In a national survey, users ranked Solodev as among the best software tools in the country.</p>
+                                </li>
+                                <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase">January 18th, 2018</span>
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="#">
+                                            City of Miami Beach Launches Enticing Website
+                                        </a>
+                                    </h3>
+
+                                    <p class="m-0 post_intro">The iconic tourist destination looked to become the golden standard for other city websites throughout the United States.</p>
+                                </li>
+                            </ul>                            
+                            <div class="left-right-arrows pr-lg-5">
+                                <button class="prev-arrow-announcement" type="button"><i class="fa fa-chevron-left"></i></button>
+                                <button class="next-arrow-announcement" type="button"><i class="fa fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">
+                                <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase">05/10/2019</span>
+
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="https://www.solodev.com/news/solodev-earns-national-recognition-as-marketing-and-commerce-cms-leader.stml">
+                                            Solodev Earns National Recognition as Marketing and Commerce CMS Leader
+                                        </a>
+                                    </h3>
+                                    <p class="m-0 post_intro">Solodev has achieved rigorous Marketing & Commerce competency in recent listing from Amazon Web Services.</p>
+                                </li>
+                                <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase">05/10/2019</span>
+
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="https://www.solodev.com/news/solodev-helps-power-american-dairy-association-north-easts-online-passions.stml">
+                                            Solodev Helps Power American Dairy Association North East's Online Passions
+                                        </a>
+                                    </h3>
+
+                                    <p class="m-0 post_intro">The newly redesigned website combines three legacy organizations into one user-optimized website for the AWS Cloud.</p>
+                                </li>
+                                <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase">05/10/2019</span>
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="http://www.marketwired.com/press-release/solodev-recognized-as-number-one-high-performer-on-g2-crowds-summer-2017-web-content-2225641.htm">
+                                            Solodev Recognized as Number One
+                                        </a>
+                                    </h3>
+                                    <p class="m-0 post_intro">Web experience platform provider ranked among global content management software companies based largely on user ratings</p>
+                                </li>
+                            </ul>
+                            
+                            <div class="left-right-arrows pr-lg-5">
+                                <button class="prev-arrow-announcement" type="button"><i class="fa fa-chevron-left"></i></button>
+                                <button class="next-arrow-announcement" type="button"><i class="fa fa-chevron-right"></i></button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex desc">
-                        We have well equiped instuments in our laboratory.
-                    </div>
-                </div>
-            </div>
-            <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
-                <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
-                    <i class="fa-solid fa-lightbulb"></i>
-                </div>
-                <div class="d-flex flex-column ps-3 justify-content-center">
-                    <div class="d-flex title">
-                        Physics Lab
-                    </div>
-                    <div class="d-flex desc">
-                        Latest and highly calibrated instruments with well furnished lab.
-                    </div>
-                </div>
-            </div>
-            <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
-                <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
-                    <i class="fa-solid fa-computer"></i>
-                </div>
-                <div class="d-flex flex-column ps-3 justify-content-center">
-                    <div class="d-flex title">
-                        Computer Lab
-                    </div>
-                    <div class="d-flex desc">
-                        Airconditioned Lab with latest computers and Projector.
-                    </div>
-                </div>
-            </div>
-            <div class="col col-6 d-flex flex-row justify-content-evenly mt-5">
-                <div class="d-flex justify-content-center align-items-center p-3 fs-4 border rounded-circle">
-                    <i class="fa-solid fa-book"></i>
-                </div>
-                <div class="d-flex flex-column ps-3 justify-content-center">
-                    <div class="d-flex title">
-                        Library
-                    </div>
-                    <div class="d-flex desc">
-                        we have lot book collection from around the world
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid institution mt-5">
-    <div class="mb-4">
-        <div class="text-center title"><strong>OUR INSTITUTION</strong> </div>
-        <div class="desc" style="text-align: center;">Our infrastructure</div>
-    </div>
-    <ul id="images_wrapper" class="images-transition-wrapper">
-        <li>
-            <img src="/images/5.jpg" class="images-transition" alt="...">
-        </li>
-        <li>
-            <img src="/images/3.jpg" class="images-transition" alt="">
-        </li>
-        <li>
-            <img src="/images/5.jpg" class="images-transition" alt="">
-        </li>
-        <li>
-            <img src="/images/sch.jpg" class="images-transition" alt="">
-        </li>
-         <li>
-            <img src="/images/5.jpg" class="images-transition" alt="">
-        </li>
-         <li>
-            <img src="/images/3.jpg" class="images-transition" alt="">
-        </li> <li>
-            <img src="/images/sch.jpg" class="images-transition" alt="">
-        </li>
-         <li>
-            <img src="/images/5.jpg" class="images-transition" alt="">
-        </li>
-    </ul>
-<div>
-    
 
-<div class="container-fluid admission mt-3 mb-3">
-    <div class="text-center main-title">
-        admission are open
-    </div>
+    <div class="container-fluid institution mt-5">
+        <div class="mb-4">
+            <div class="text-center title"><strong>OUR INSTITUTION</strong> </div>
+            <div class="desc" style="text-align: center;">Our infrastructure</div>
+        </div>
+        <ul id="images_wrapper" class="images-transition-wrapper">
+            <li>
+                <img src="/images/5.jpg" class="images-transition" alt="...">
+            </li>
+            <li>
+                <img src="/images/3.jpg" class="images-transition" alt="">
+            </li>
+            <li>
+                <img src="/images/5.jpg" class="images-transition" alt="">
+            </li>
+            <li>
+                <img src="/images/sch.jpg" class="images-transition" alt="">
+            </li>
+            <li>
+                <img src="/images/5.jpg" class="images-transition" alt="">
+            </li>
+            <li>
+                <img src="/images/3.jpg" class="images-transition" alt="">
+            </li>
+            <li>
+                <img src="/images/sch.jpg" class="images-transition" alt="">
+            </li>
+            <li>
+                <img src="/images/5.jpg" class="images-transition" alt="">
+            </li>
+        </ul>
+        <div>
+
+
+            <div class="container-fluid admission mt-3 mb-3">
+                <div class="text-center main-title">
+                    admission are open
+                </div>

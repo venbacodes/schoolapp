@@ -20,7 +20,8 @@
   {
     "outputFileName": "index/index.min.css",
     "inputFiles": [
-      "index/index.css"      
+      "index/index.css",
+      "announcements.css"
     ],
     "minify": {
       "enabled": true
@@ -47,7 +48,8 @@
   {
     "outputFileName": "site.min.js",
     "inputFiles": [
-      "site.js"
+      "site.js",
+      "modernizr.custom.js"
     ],
     "minify": {
       "enabled": true
