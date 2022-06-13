@@ -56,31 +56,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="~/Video-Gallery">Video Gallery</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="~/Contact Us">Contact Us</a>
                         </li>
-                        @if (User?.Identity?.IsAuthenticated ?? false)
-                        {
-                            <li class="nav-item dropdown user-profile-nav-item">
-                                <div class="user-profile-nav">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i data-feather="user"></i>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="~/account/profile">My Profile</a></li>
-                                        <li><a class="dropdown-item" href="~/account/logout">Sign Out</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        }
-                        else
-                        {
-                            <li id="loginButton" class="nav-item">
-                                <a class="btn btn-primary" href="~/account/login?returnTo=@currentUrlLocalPath" role="button">Login</a>                               
-                            </li>
-                        }
                     </ul>
                 </div>
             </div>
@@ -96,7 +73,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; @DateTime.Now.Year - SchoolApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; @DateTime.Now.Year - Copyright 2022.- <a asp-area="" asp-page="/Privacy">All rights reserved to Al-Jamieathus Sadhiq School.</a>
         </div>
     </footer>
 

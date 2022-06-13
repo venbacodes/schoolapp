@@ -23,17 +23,28 @@ namespace SchoolApp.Pages
         {        
             StaffList=new List<Staff>()     
             {
-                new Staff{Name="Ram",Department="Physics",Image="profile.png",Education="M.Sc. M.Ed."},
-                new Staff{Name="Mohammed",Department="English",Image="profile.png",Education="M.A. M.Ed."},
-                new Staff{Name="Rahul",Department="Physics",Image="profile.png",Education="M.Sc. M.Ed."},
-                new Staff{Name="Mohan",Department="English",Image="profile.png",Education="M.A. M.Ed."},
-                new Staff{Name="Rahman",Department="Physics",Image="profile.png",Education="M.Sc. M.Ed."},
-                new Staff{Name="Mohammed dhaneesh",Department="English",Image="profile.png",Education="M.A. M.Ed."},
-                new Staff{Name="Aarees",Department="Physics",Image="profile.png",Education="M.Sc. M.Ed."},
-                new Staff{Name="Kadhar",Department="English",Image="profile.png",Education="M.A. M.Ed."},
-                new Staff{Name="Ajmal",Department="Physics",Image="profile.png",Education="M.Sc. M.Ed."},
-                new Staff{Name="Umar",Department="English",Image="profile.png",Education="M.A. M.Ed."}
-
+                new Staff{Name="Kamarthaj",Image="profile.png",Education="Principal"},
+                new Staff{Name="Sultana",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Kathija",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Parveen",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Farzana",Image="profile.png",Education="T.G.T"},
+                new Staff{Name="Ayesha",Image="profile.png",Education="P.E.T"},
+                new Staff{Name="Fathima",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Sumaiya",Image="profile.png",Education="T.G.T"},
+                new Staff{Name="Dhanam",Image="profile.png",Education="T.G.T"},
+                new Staff{Name="Diana",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Revathi",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Jafrin",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Lakshmi",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Priya",Image="profile.png",Education="T.G.T"},
+                new Staff{Name="Anushiya",Image="profile.png",Education="T.G.T"},
+                new Staff{Name="Jenitha",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Mercy",Image="profile.png",Education="T.G.T"},
+                new Staff{Name="Jean Renitha",Image="profile.png",Education="T.G.T"},
+                new Staff{Name="Deepika",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Nasrin",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Afrin",Image="profile.png",Education="P.R.T"},
+                new Staff{Name="Saira banu",Image="profile.png",Education="P.R.T"}
 
             };
         }
